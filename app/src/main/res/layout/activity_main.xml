@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="anthonyjholmes.github.io.imagebuttontests.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+        <!--android:background="#000000"-->
+        <!-- Challenge top line and puzzle complete-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/challenge0"
+                    style="@style/challengeButtons" />
+
+                <ImageButton
+                    android:id="@+id/challenge1"
+                    style="@style/challengeButtons" />
+
+                <ImageButton
+                    android:id="@+id/challenge2"
+                    style="@style/challengeButtons" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/puzzles_completed"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Challenge second line and time remaining-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/challenge3"
+                    style="@style/challengeButtons" />
+
+                <ImageButton
+                    android:id="@+id/challenge4"
+                    style="@style/challengeButtons" />
+
+                <ImageButton
+                    android:id="@+id/challenge5"
+                    style="@style/challengeButtons" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/countdown1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/time_remaining"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Challenge third line -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/challenge6"
+                style="@style/challengeButtons" />
+
+            <ImageButton
+
+                android:id="@+id/challenge7"
+                style="@style/challengeButtons" />
+
+            <ImageButton
+                android:id="@+id/challenge8"
+                style="@style/challengeButtons" />
+        </LinearLayout>
+
+        <!--Score box-->
+        <LinearLayout
+            style="@style/ScoresBox"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/mScore0"
+                style="@style/ScoreText" />
+
+            <TextView
+                android:id="@+id/mScore1"
+                style="@style/ScoreText" />
+
+            <TextView
+                android:id="@+id/mScore2"
+                style="@style/ScoreText" />
+
+            <TextView
+                android:id="@+id/mScore3"
+                style="@style/ScoreText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Button1"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button2"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button3"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button4"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button5"
+                style="@style/puzzleButtons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Button6"
+                style="@style/puzzleButtons" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button7"
+                    style="@style/puzzleButtons" />
+
+                <ImageButton
+                    android:id="@+id/Button8"
+                    style="@style/puzzleButtons" />
+
+                <ImageButton
+                    android:id="@+id/Button9"
+                    style="@style/puzzleButtons" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button10"
+                    style="@style/puzzleButtons" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Button11"
+                style="@style/puzzleButtons" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button12"
+                    style="@style/puzzleButtons" />
+
+                <ImageButton
+                    android:id="@+id/Button13"
+                    style="@style/puzzleButtons" />
+
+                <ImageButton
+                    android:id="@+id/Button14"
+                    style="@style/puzzleButtons" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button15"
+                    style="@style/puzzleButtons" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Button16"
+                style="@style/puzzleButtons" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button17"
+                    style="@style/puzzleButtons" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button18"
+                    style="@style/puzzleButtons" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:id="@+id/LayoutPuzzle19">
+
+                <ImageButton
+                    android:id="@+id/Button19"
+                    style="@style/puzzleButtons" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button20"
+                    style="@style/puzzleButtons" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Button21"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button22"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button23"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/Button24"
+                style="@style/puzzleButtons" />
+
+            <ImageButton
+                android:id="@+id/ButtonEMPTY"
+                style="@style/puzzleButtonsEmpty" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
