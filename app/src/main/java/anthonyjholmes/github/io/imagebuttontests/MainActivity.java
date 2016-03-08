@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }
         startGame();
     }
-    
+
     public int getResource(ImageButton button) {
         Integer color = 0;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
